@@ -1,4 +1,4 @@
-## Example NextJS 13 App
+# Example NextJS 13 App
 
 
 ## Blog: Removing Blog/contentlayer integration:
