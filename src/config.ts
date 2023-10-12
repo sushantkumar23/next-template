@@ -26,5 +26,5 @@ export const baseTwitterMetadata = {
   creator: TWITTER_HANDLE
 }
 
-// Blog related configuration
+// Blog related configuration: Remove this if you don't need a blog
 export const BLOG_NAME = "Example App's Blog"

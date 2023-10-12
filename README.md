@@ -12,6 +12,14 @@ yarn dev
 pnpm dev
 ```
 
+### Removing Blog/contentlayer integration:
+
+Remove the packages first
+yarn remove contentlayer next-contentlayer
+
+Remove the files and folders of blog
+rm -rf blog contentlayer.config.ts app/blog
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
