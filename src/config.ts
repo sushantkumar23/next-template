@@ -1,8 +1,11 @@
 export const APP_NAME = 'Example App'
+export const COMPANY_NAME = 'Example Company'
+export const COMPANY_URL = 'https://www.example.com'
 
 export const BASE_URL = process.env.BASE_URL || 'https://localhost:3000'
 
-// Metadata for SEO: title, description, OG and Twitter cards
+// Configuration: Metadata
+// for SEO: title, description, OG and Twitter cards
 export const title = `${APP_NAME} - Subtile of the example app`
 export const description =
   'This is an example app to show how to use Next.js with TypeScript and Tailwind CSS.'
@@ -26,5 +29,6 @@ export const baseTwitterMetadata = {
   creator: TWITTER_HANDLE
 }
 
-// Blog related configuration: Remove this if you don't need a blog
+// Configuration: Blog
+// Remove these lines when no blog is needed
 export const BLOG_NAME = "Example App's Blog"
