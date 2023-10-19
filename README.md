@@ -5,7 +5,7 @@ Built with Next 13 App Router, TailwindCSS, and Contentlayer (for Blog)
 ## Blog: Adding Blog/contentlayer integration to NextJS
 Install the packages 
 ```
-yarn add next-contentlayer contentlayer date-fns schema-dts
+yarn add next-contentlayer contentlayer date-fns schema-dts @tailwindcss/typography
 ```
 
 Then wrap your next configuration object in (next.config.js) in the withContentlayer utility.
@@ -50,6 +50,10 @@ include: [
   ".contentlayer/generated"
 ] 
 ```
+
+Add, the `blog` folder on root where the .md files can be added for each post
+
+Add, the /blog route inside and /blog/[slug] for rendering the individual post
 
 
 ## Blog: Removing Blog/contentlayer integration
