@@ -5,13 +5,13 @@ Built with Next 13 App Router, TailwindCSS, and Contentlayer (for Blog)
 ## Blog: Adding Blog/contentlayer integration to NextJS
 Install the packages 
 ```
-yarn add next-contentlayer
+yarn add next-contentlayer contentlayer date-fns schema-dts
 ```
 
 Then wrap your next configuration object in (next.config.js) in the withContentlayer utility.
 ```
 // next.config.js
-import { withContentlayer } from "next-contentlayer"
+const { withContentlayer } = require("next-contentlayer")
 module.exports = withContentlayer(nextConfig)
 ```
 
