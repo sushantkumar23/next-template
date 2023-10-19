@@ -51,9 +51,25 @@ include: [
 ] 
 ```
 
-Add, the `blog` folder on root where the .md files can be added for each post
+Add the `blog` folder on root where the .md files can be added for each post
 
-Add, the /blog route inside and /blog/[slug] for rendering the individual post
+Add the /blog route inside and /blog/[slug] for rendering the individual post
+
+Update the `tailwind.config.js` file with `@tailwindcss/typography` plugin
+```
+plugins: [
+  ...,
+  require(@tailwindcss/typography)
+]
+```
+
+Update the `.gitignore` file to include `.contentlayer` folder
+```
+//.gitignore
+...
+# contentlayer
+.contentlayer
+```
 
 
 ## Blog: Removing Blog/contentlayer integration
