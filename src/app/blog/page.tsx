@@ -42,7 +42,9 @@ export default async function BlogIndex() {
     <Container>
       <div className="py-32">
         <h3 className="text-md font-bold text-indigo-500">Blog</h3>
-        <h1 className="mt-4 text-4xl font-extrabold">{BLOG_NAME}</h1>
+        <h1 className="mt-4 text-4xl font-extrabold text-black dark:text-white">
+          {BLOG_NAME}
+        </h1>
         <div className="mt-6">
           {posts.map((post: Post, index) => (
             <ArticleCard key={index} post={post} />

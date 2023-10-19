@@ -1,8 +1,9 @@
 export const APP_NAME = 'Example App'
+export const BASE_URL = process.env.BASE_URL || 'http://localhost:3000'
+
+// Configuration: Company
 export const COMPANY_NAME = 'Example Company'
 export const COMPANY_URL = 'https://www.example.com'
-
-export const BASE_URL = process.env.BASE_URL || 'http://localhost:3000'
 
 // Configuration: Metadata
 // for SEO: title, description, OG and Twitter cards
