@@ -3,13 +3,37 @@
 import Link from 'next/link'
 import React from 'react'
 import { PrivacyTermsContainer } from '@/components/containers'
-
 import {
+  APP_NAME,
+  BASE_URL,
   COMPANY_NAME,
   COMPANY_ADDRESS_LINE_1,
   COMPANY_ADDRESS_LINE_2,
-  COMPANY_EMAIL
+  COMPANY_EMAIL,
+  baseOpenGraphMetadata,
+  baseTwitterMetadata
 } from '@/config'
+
+const title = 'Privacy Policy'
+const description = `Privacy Policy for ${APP_NAME}`
+
+export async function generateMetadata() {
+  return {
+    title,
+    description,
+    openGraph: {
+      ...baseOpenGraphMetadata,
+      title,
+      description,
+      url: `${BASE_URL}/privacy`
+    },
+    twitter: {
+      ...baseTwitterMetadata,
+      title,
+      description
+    }
+  }
+}
 
 function Privacy() {
   return (

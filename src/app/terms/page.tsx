@@ -1,7 +1,34 @@
 'use server'
 
 import { PrivacyTermsContainer } from '@/components/containers'
-import { COMPANY_NAME } from '@/config'
+import {
+  APP_NAME,
+  BASE_URL,
+  COMPANY_NAME,
+  baseOpenGraphMetadata,
+  baseTwitterMetadata
+} from '@/config'
+
+const title = 'Terms of Service'
+const description = `Terms of Service for ${APP_NAME}`
+
+export async function generateMetadata() {
+  return {
+    title,
+    description,
+    openGraph: {
+      ...baseOpenGraphMetadata,
+      title,
+      description,
+      url: `${BASE_URL}/terms`
+    },
+    twitter: {
+      ...baseTwitterMetadata,
+      title,
+      description
+    }
+  }
+}
 
 function Terms() {
   return (
