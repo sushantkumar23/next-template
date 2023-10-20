@@ -11,6 +11,7 @@ export const title = `${APP_NAME} - Subtile of the example app`
 export const description =
   'This is an example app to show how to use Next.js with TypeScript and Tailwind CSS.'
 
+// Configuration: Metadata - OpenGraph
 export const baseOpenGraphMetadata = {
   title,
   description,
@@ -20,6 +21,7 @@ export const baseOpenGraphMetadata = {
   images: ['/opengraph-image.png']
 }
 
+// Configuration: Metadata - Twitter
 export const TWITTER_HANDLE = '@example_app'
 export const baseTwitterMetadata = {
   card: 'summary_large_image',
