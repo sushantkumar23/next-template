@@ -1,7 +1,7 @@
 'use server'
 
 import { compareDesc } from 'date-fns'
-import Container from '@/components/container'
+import { Container } from '@/components/containers'
 import { allPosts, Post } from 'contentlayer/generated'
 import ArticleCard from '@/app/blog/article-card'
 import {

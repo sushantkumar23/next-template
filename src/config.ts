@@ -4,9 +4,12 @@ export const BASE_URL = process.env.BASE_URL || 'http://localhost:3000'
 // Configuration: Company
 export const COMPANY_NAME = 'Example Company'
 export const COMPANY_URL = 'https://www.example.com'
+export const COMPANY_ADDRESS_LINE_1 = '123 Example Street'
+export const COMPANY_ADDRESS_LINE_2 = 'Example City, EX 12345'
+export const COMPANY_EMAIL = 'contact@example.com'
 
 // Configuration: Metadata
-// for SEO: title, description, OG and Twitter cards
+// for SEO: title, description
 export const title = `${APP_NAME} - Subtile of the example app`
 export const description =
   'This is an example app to show how to use Next.js with TypeScript and Tailwind CSS.'
