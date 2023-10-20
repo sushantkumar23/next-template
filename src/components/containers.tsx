@@ -1,14 +1,18 @@
 import { ReactNode } from 'react'
 
 import { APP_NAME } from '@/config'
+import { cn } from '@/utils'
 
 type ContainerProps = {
   children: ReactNode
 } & React.HTMLProps<HTMLDivElement>
 
-export function Container(props: ContainerProps) {
+export function Container({ className, ...props }: ContainerProps) {
   return (
-    <div className="mx-auto max-w-3xl px-4" {...props}>
+    <div
+      className={cn('mx-auto max-w-3xl px-4 sm:px-6 lg:px-8', className)}
+      {...props}
+    >
       {props.children}
     </div>
   )
@@ -16,14 +20,12 @@ export function Container(props: ContainerProps) {
 
 function PrivacyTermsHeadingPanel({ heading }: { heading: string }) {
   return (
-    <div className="mx-auto mb-12 text-lg">
-      <h1>
-        <span className="block text-center text-base font-semibold uppercase tracking-wide">
-          {APP_NAME}
-        </span>
-        <span className="mt-2 block text-center text-3xl font-extrabold leading-8 tracking-tight sm:text-4xl">
-          {heading}
-        </span>
+    <div className="mb-12">
+      <p className="block text-center text-base font-semibold uppercase tracking-wide">
+        {APP_NAME}
+      </p>
+      <h1 className="mt-2 block text-center text-3xl font-extrabold leading-8 tracking-tight sm:text-4xl">
+        {heading}
       </h1>
     </div>
   )
@@ -40,11 +42,9 @@ export function PrivacyTermsContainer({
   ...props
 }: PrivacyTermsContainerProps) {
   return (
-    <Container>
-      <div className="prose relative mx-auto max-w-prose px-4 py-24 dark:prose-invert sm:px-6 lg:px-8">
-        <PrivacyTermsHeadingPanel heading={heading} />
-        <div className="space-y-6 text-lg leading-8">{children}</div>
-      </div>
+    <Container className="py-24 max-w-prose">
+      <PrivacyTermsHeadingPanel heading={heading} />
+      <div className="prose dark:prose-invert lg:prose-lg">{children}</div>
     </Container>
   )
 }
