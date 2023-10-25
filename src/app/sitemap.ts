@@ -7,7 +7,7 @@ import { allPosts, Post } from 'contentlayer/generated'
 import { BASE_URL } from '@/config'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const routes = [''].map((route) => ({
+  const routes = ['', '/privacy', '/terms'].map((route) => ({
     url: `${BASE_URL}${route}`,
     lastModified: new Date().toISOString().split('T')[0]
   }))

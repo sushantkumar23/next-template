@@ -1,7 +1,9 @@
 'use server'
 
 import Link from 'next/link'
+
 import ThemeToggle from '@/components/theme-toggle'
+import { APP_NAME } from '@/config'
 
 export async function NavLink({
   href,
@@ -26,7 +28,7 @@ export async function Header() {
       <nav className="relative z-50 flex justify-between">
         <div className="flex items-center justify-between md:gap-x-12 w-full">
           <Link className="font-bold text-2xl" href="#" aria-label="Home">
-            example
+            {APP_NAME}
           </Link>
           <div className="hidden md:flex space-x-4 items-center">
             <ThemeToggle />
