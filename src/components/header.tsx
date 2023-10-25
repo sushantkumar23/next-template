@@ -27,7 +27,7 @@ export async function Header() {
     <header className="py-6 px-10">
       <nav className="relative z-50 flex justify-between">
         <div className="flex items-center justify-between md:gap-x-12 w-full">
-          <Link className="font-bold text-2xl" href="#" aria-label="Home">
+          <Link className="font-bold text-2xl" href="/" aria-label="Home">
             {APP_NAME}
           </Link>
           <div className="hidden md:flex space-x-4 items-center">
