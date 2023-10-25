@@ -21,14 +21,14 @@ export const baseOpenGraphMetadata = {
   type: 'website',
   url: BASE_URL,
   siteName: APP_NAME,
-  images: ['/opengraph-image.png']
+  images: ['/image.png']
 }
 
 // Configuration: Metadata - Twitter
 export const TWITTER_HANDLE = '@example_app'
 export const baseTwitterMetadata = {
   card: 'summary_large_image',
-  images: ['/twitter-image.png'],
+  images: ['/image.png'],
   title,
   description,
   site: TWITTER_HANDLE,
