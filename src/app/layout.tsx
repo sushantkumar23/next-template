@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/react'
 
 import { Header } from '@/components/header'
+import Footer from '@/components/footer'
 import Providers from '@/components/providers'
 
 import {
@@ -38,6 +39,7 @@ export default function RootLayout({
         <Providers attribute="class" defaultTheme="system" enableSystem>
           <Header />
           {children}
+          <Footer />
         </Providers>
         <Analytics />
       </body>
