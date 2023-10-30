@@ -48,9 +48,6 @@ const StructuredData: React.FC<DataProps> = ({ data }) => {
   )
 }
 
-export const generateStaticParams = async () =>
-  allPosts.map((post) => ({ slug: post._raw.flattenedPath }))
-
 export async function generateMetadata({
   params
 }: {
@@ -75,7 +72,10 @@ export async function generateMetadata({
   }
 }
 
-export default async function BlogLayout({
+export const generateStaticParams = async () =>
+  allPosts.map((post) => ({ slug: post._raw.flattenedPath }))
+
+export default async function BlogDetailsPage({
   params
 }: {
   params: { slug: string }
