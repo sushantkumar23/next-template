@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-import { APP_NAME, COMPANY_NAME } from '@/config'
+import { APP_NAME, COMPANY_NAME, COMPANY_URL } from '@/config'
 
 function Footer() {
   return (
@@ -23,9 +23,11 @@ function Footer() {
           </div>
         </div>
         <div className="pt-4 mt-12 border-t border-gray-200 dark:border-gray-800">
-          <p className="text-sm text-gray-400 xl:text-center">
-            &copy; 2023 {COMPANY_NAME}. All rights reserved.
-          </p>
+          <Link target="_blank" href={COMPANY_URL}>
+            <p className="text-sm text-gray-400 xl:text-center">
+              &copy; 2023 {COMPANY_NAME}. All rights reserved.
+            </p>
+          </Link>
         </div>
       </div>
     </footer>
