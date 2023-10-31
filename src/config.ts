@@ -7,12 +7,18 @@ export const COMPANY_URL = 'https://www.example.com'
 export const COMPANY_ADDRESS_LINE_1 = '123 Example Street'
 export const COMPANY_ADDRESS_LINE_2 = 'Example City, EX 12345'
 export const COMPANY_EMAIL = 'contact@example.com'
+export const PRODUCTS = [
+  { name: 'Product #1', href: 'https://example.com' },
+  { name: 'Product #2', href: 'https://example.com' },
+  { name: 'Product #3', href: 'https://example.com' },
+  { name: 'Product #4', href: 'https://example.com' }
+]
 
 // Configuration: Metadata
 // for SEO: title, description
 export const title = `${APP_NAME} - Subtile of the example app`
 export const description =
-  'This is an example app to show how to use Next.js with TypeScript and Tailwind CSS.'
+  'Nextjs boilerplate app to show how to build fast, modern and accessible websites'
 
 // Configuration: Metadata - OpenGraph
 export const baseOpenGraphMetadata = {
