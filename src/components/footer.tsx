@@ -56,8 +56,8 @@ function Footer() {
       <div className="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:py-16 lg:px-8">
         <div className="xl:grid xl:grid-cols-3 xl:gap-32">
           <div className="xl:col-span-1 items-center md:items-start flex flex-col py-6">
-            <Link href={'/'} className="flex items-center mb-2 font-extrabold">
-              <span className="text-2xl font-bold lowercase">{APP_NAME}</span>
+            <Link href={'/'} className="mb-2 text-2xl font-bold lowercase">
+              {APP_NAME}
             </Link>
             <p className="mb-8 text-base text-gray-500 dark:text-gray-400">
               {description}
