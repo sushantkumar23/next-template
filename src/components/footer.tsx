@@ -53,9 +53,9 @@ function Footer() {
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
-      <div className="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:py-16 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
         <div className="xl:grid xl:grid-cols-3 xl:gap-32">
-          <div className="xl:col-span-1 items-center md:items-start flex flex-col py-6">
+          <div className="flex flex-col items-center py-6 md:items-start xl:col-span-1">
             <Link href={'/'} className="mb-2 text-2xl font-bold lowercase">
               {APP_NAME}
             </Link>
@@ -71,7 +71,7 @@ function Footer() {
             <FooterLinksColumn title="Company" links={navigation.company} />
           </div>
         </div>
-        <div className="pt-4 mt-12 border-t border-gray-200 dark:border-gray-700">
+        <div className="mt-12 border-t border-gray-200 pt-4 dark:border-gray-700">
           <Link target="_blank" href={COMPANY_URL}>
             <p className="text-sm text-gray-400 xl:text-center">
               &copy; 2023 {COMPANY_NAME}. All rights reserved.

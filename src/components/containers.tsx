@@ -42,7 +42,7 @@ export function PrivacyTermsContainer({
   ...props
 }: PrivacyTermsContainerProps) {
   return (
-    <Container className="py-24 max-w-prose">
+    <Container className="max-w-prose py-24">
       <PrivacyTermsHeadingPanel heading={heading} />
       <div className="prose dark:prose-invert lg:prose-lg">{children}</div>
     </Container>

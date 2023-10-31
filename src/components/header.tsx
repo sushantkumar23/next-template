@@ -24,13 +24,13 @@ export async function NavLink({
 
 export async function Header() {
   return (
-    <header className="py-6 px-10">
+    <header className="px-10 py-6">
       <nav className="relative z-50 flex justify-between">
-        <div className="flex items-center justify-between md:gap-x-12 w-full">
-          <Link className="font-bold text-2xl" href="/" aria-label="Home">
+        <div className="flex w-full items-center justify-between md:gap-x-12">
+          <Link className="text-2xl font-bold" href="/" aria-label="Home">
             {APP_NAME}
           </Link>
-          <div className="hidden md:flex space-x-4 items-center">
+          <div className="hidden items-center space-x-4 md:flex">
             <ThemeToggle />
             <Link className="font-bold" href="/login">
               Sign in
