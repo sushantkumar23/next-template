@@ -8,13 +8,14 @@ import {
   APP_NAME,
   BASE_URL,
   BLOG_NAME,
+  BLOG_DESCRIPTION,
   baseTwitterMetadata,
   baseOpenGraphMetadata
 } from '@/config'
 
 // Metadata for BlogPage: title, description
 const title = `${BLOG_NAME} | ${APP_NAME}`
-const description = 'Read about the latest developments on example app'
+const description = BLOG_DESCRIPTION
 
 export async function generateMetadata() {
   return {
@@ -41,10 +42,11 @@ export default async function BlogIndex() {
   return (
     <Container>
       <div className="py-32">
-        <h3 className="text-md font-bold text-indigo-500">Blog</h3>
+        <h3 className="font-bold text-indigo-500">{BLOG_NAME}</h3>
         <h1 className="mt-4 text-4xl font-extrabold text-black dark:text-white">
           {BLOG_NAME}
         </h1>
+        <p className="mt-4 text-lg opacity-50">{BLOG_DESCRIPTION}</p>
         <div className="mt-6">
           {posts.map((post: Post, index) => (
             <ArticleCard key={index} post={post} />

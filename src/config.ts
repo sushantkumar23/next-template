@@ -1,3 +1,4 @@
+// Configuration: App
 export const APP_NAME = 'Example App'
 export const BASE_URL = process.env.BASE_URL || 'http://localhost:3000'
 
@@ -44,3 +45,5 @@ export const baseTwitterMetadata = {
 // Configuration: Blog
 // Remove these lines when no blog is needed
 export const BLOG_NAME = "Example App's Blog"
+export const BLOG_DESCRIPTION =
+  'Read about the latest developments on example app'

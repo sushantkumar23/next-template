@@ -11,6 +11,8 @@ import {
   title,
   description,
   BASE_URL,
+  COMPANY_NAME,
+  COMPANY_URL,
   baseOpenGraphMetadata,
   baseTwitterMetadata
 } from '@/config'
@@ -22,8 +24,9 @@ export const metadata: Metadata = {
   description,
   robots: 'index, follow',
   viewport: 'width=device-width, initial-scale=1',
+  authors: { name: COMPANY_NAME, url: COMPANY_URL },
   metadataBase: new URL(BASE_URL),
-  keywords: ['example app', 'content layer'],
+  keywords: ['example app', 'content layer', 'nextjs boilerplate'],
   openGraph: baseOpenGraphMetadata,
   twitter: baseTwitterMetadata
 }
