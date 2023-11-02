@@ -41,7 +41,7 @@ export default async function BlogIndex() {
   )
   return (
     <Container>
-      <div className="py-32">
+      <div className="py-16 lg:py-20">
         <h3 className="font-bold text-indigo-500">{BLOG_NAME}</h3>
         <h1 className="mt-4 text-4xl font-extrabold text-black dark:text-white">
           {BLOG_NAME}
