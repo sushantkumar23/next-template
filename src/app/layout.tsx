@@ -10,6 +10,7 @@ import Providers from '@/components/providers'
 import {
   title,
   description,
+  keywords,
   BASE_URL,
   COMPANY_NAME,
   COMPANY_URL,
@@ -31,7 +32,7 @@ export const metadata: Metadata = {
   robots: 'index, follow',
   authors: { name: COMPANY_NAME, url: COMPANY_URL },
   metadataBase: new URL(BASE_URL),
-  keywords: ['example app', 'content layer', 'nextjs boilerplate'],
+  keywords,
   openGraph: baseOpenGraphMetadata,
   twitter: baseTwitterMetadata
 }

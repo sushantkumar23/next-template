@@ -20,6 +20,7 @@ export const PRODUCTS = [
 export const title = `${APP_NAME} - Subtile of the example app`
 export const description =
   'Nextjs boilerplate app to show how to build fast, modern and accessible websites'
+export const keywords = ['example app', 'content layer', 'nextjs boilerplate']
 
 // Configuration: Metadata - OpenGraph
 export const baseOpenGraphMetadata = {
