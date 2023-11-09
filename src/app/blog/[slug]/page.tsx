@@ -90,7 +90,7 @@ export default async function BlogDetailsPage({
         <h1 className="mb-4 text-4xl font-bold leading-snug">{post.title}</h1>
         <time
           dateTime={post.date}
-          className="text-md mb-1 text-gray-600 dark:text-gray-400"
+          className="mb-1 text-gray-600 dark:text-gray-400"
         >
           {format(parseISO(post.date), 'LLLL d, yyyy')}
         </time>
