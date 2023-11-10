@@ -11,6 +11,7 @@ import {
   title,
   description,
   keywords,
+  APP_NAME,
   BASE_URL,
   COMPANY_NAME,
   COMPANY_URL,
@@ -29,12 +30,18 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title,
   description,
+  keywords,
+  applicationName: APP_NAME,
   robots: 'index, follow',
   authors: { name: COMPANY_NAME, url: COMPANY_URL },
   metadataBase: new URL(BASE_URL),
-  keywords,
   openGraph: baseOpenGraphMetadata,
-  twitter: baseTwitterMetadata
+  twitter: baseTwitterMetadata,
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon-16x16.png',
+    apple: '/apple-touch-icon.png'
+  }
 }
 
 export default function RootLayout({
