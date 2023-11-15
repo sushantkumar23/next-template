@@ -29,7 +29,8 @@ export const baseOpenGraphMetadata = {
   type: 'website',
   url: BASE_URL,
   siteName: APP_NAME,
-  images: ['/image.png']
+  images: ['/image.png'],
+  locale: 'en_US'
 }
 
 // Configuration: Metadata - Twitter
